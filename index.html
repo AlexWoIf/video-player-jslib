@@ -5,11 +5,17 @@
   <meta charset="utf-8">
   <link rel="stylesheet" href="font-awesome.min.css">
   <style>
-    #player                   {width: 800px; height: 600px; box-shadow: 0 0 15px black;}
-    .js-video-container       {width: 100%; height: 100%}
+    #player  {
+      width: 800px;
+      height: 600px;
+      box-shadow: 0 0 15px black;
+      display: flex;
+      flex-direction: column;
+    }
+    .js-video-container       {flex: 1 0 auto;}
     .js-play-button,
     .js-pause-button          {border-style: none; cursor: pointer; background-color: transparent;}
-    .video-controls-container {width: 100%; background-color: black;}
+    .video-controls-container {background-color: black;}
     .fa-play, .fa-pause       {color: white;}
   </style>
 </head>
