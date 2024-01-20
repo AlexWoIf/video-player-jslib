@@ -17,9 +17,11 @@
     }
     .video-controls-container {
       background-color: black;
+      display: flex;
+      flex-direction: row;
     }
     .js-play-button, .js-pause-button,
-    .js-mute-button, .js-volume-button {
+    .js-mute-button, .js-volume-button, .js-fullscreen-button {
       margin: 10px;
       border-style: none;
       cursor: pointer;
@@ -27,6 +29,9 @@
       background-color: transparent;
       font-size: 30px;
       width: 30px
+    }
+    .button-separator {
+      flex: 1 0 auto;
     }
   </style>
 </head>
@@ -46,6 +51,10 @@
       </button>
       <button class="js-volume-button">
         <i class="fa fa-volume-up" aria-hidden="true"></i>
+      </button>
+      <div class="button-separator"></div>
+      <button class="js-fullscreen-button">
+        <i class="fa fa-expand" aria-hidden="true"></i>
       </button>
     </div>
   </div>
