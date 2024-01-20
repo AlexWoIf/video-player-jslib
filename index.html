@@ -12,11 +12,19 @@
       display: flex;
       flex-direction: column;
     }
-    .js-video-container       {flex: 1 0 auto;}
-    .js-play-button,
-    .js-pause-button          {border-style: none; cursor: pointer; background-color: transparent;}
-    .video-controls-container {background-color: black;}
-    .fa-play, .fa-pause       {color: white;}
+    .js-video-container {
+      flex: 1 0 auto;
+    }
+    .video-controls-container {
+      background-color: black;
+    }
+    .js-play-button, .js-pause-button,
+    .js-mute-button, .js-volume-button {
+      border-style: none;
+      cursor: pointer;
+      color: white;
+      background-color: transparent;
+    }
   </style>
 </head>
 <body>
@@ -29,6 +37,12 @@
       </button>
       <button class="js-pause-button">
         <i class="fa fa-pause" aria-hidden="true"></i>
+      </button>
+      <button class="js-mute-button">
+        <i class="fa fa-volume-off" aria-hidden="true"></i>
+      </button>
+      <button class="js-volume-button">
+        <i class="fa fa-volume-up" aria-hidden="true"></i>
       </button>
     </div>
   </div>
