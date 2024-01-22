@@ -23,13 +23,12 @@
     .js-video-container {
       flex: 1 0 auto;
     }
-    .video-controls-container {
+    .vp-controls-container {
       background-color: black;
       display: flex;
       flex-direction: row;
     }
-    .js-play-button, .js-pause-button,
-    .js-mute-button, .js-volume-button, .js-fullscreen-button {
+    .vp-button {
       margin: 10px;
       border-style: none;
       cursor: pointer;
@@ -38,7 +37,7 @@
       font-size: 30px;
       width: 30px
     }
-    .button-separator {
+    .vp-button-separator {
       flex: 1 0 auto;
     }
   </style>
@@ -47,21 +46,21 @@
   <div id="player">
     <div class="js-video-container"></div>
     <!-- Here can be placed player controls: play and volume buttons -->
-    <div class="video-controls-container">
-      <button class="js-play-button">
+    <div class="vp-controls-container">
+      <button class="js-play-button vp-button">
         <i class="fa fa-play" aria-hidden="true"></i>
       </button>
-      <button class="js-pause-button">
+      <button class="js-pause-button vp-button">
         <i class="fa fa-pause" aria-hidden="true"></i>
       </button>
-      <button class="js-mute-button">
+      <button class="js-mute-button vp-button">
         <i class="fa fa-volume-up" aria-hidden="true"></i>
       </button>
-      <button class="js-volume-button">
+      <button class="js-volume-button vp-button">
         <i class="fa fa-volume-off" aria-hidden="true"></i>
       </button>
-      <div class="button-separator"></div>
-      <button class="js-fullscreen-button">
+      <div class="vp-button-separator"></div>
+      <button class="js-fullscreen-button vp-button">
         <i class="fa fa-expand" aria-hidden="true"></i>
       </button>
     </div>
