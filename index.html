@@ -43,9 +43,27 @@
     }
     .vp-button-separator {
       flex: 1 0 auto;
+      display: flex;
+      align-items: flex-start;
     }
     .vp-timer {
       margin-top: 3px;
+    }
+    .vp-slider {
+      background-color: red;
+      border-radius: 5px;
+      height: 5px;
+      margin: 10px 0px 0px 10px;
+    }
+    .vp-slider-dot {
+      height: 8px;
+      width: 8px;
+      background-color: red;
+      border-radius: 50%;
+      display: inline-block;
+      border: solid white 3px;
+      margin-top: 0.35em;
+      margin-left: -8px;
     }
     .roboto-regular {
       font-family: "Roboto", sans-serif;
@@ -72,7 +90,10 @@
         <i class="fa fa-volume-off" aria-hidden="true"></i>
       </button>
       <span class="js-current-time vp-timer"></span>
-      <div class="vp-button-separator"></div>
+      <div class="js-progress vp-button-separator">
+        <div class="js-progress-slider vp-slider"></div>
+        <span class="vp-slider-dot"></span>
+      </div>
       <span class="js-duration vp-timer"></span>
       <button class="js-fullscreen-button vp-button">
         <i class="fa fa-expand" aria-hidden="true"></i>
