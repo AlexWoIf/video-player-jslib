@@ -44,6 +44,9 @@
     .vp-button-separator {
       flex: 1 0 auto;
     }
+    .vp-timer {
+      margin-top: 3px;
+    }
     .roboto-regular {
       font-family: "Roboto", sans-serif;
       font-weight: 400;
@@ -65,13 +68,12 @@
       <button class="js-mute-button vp-button">
         <i class="fa fa-volume-up" aria-hidden="true"></i>
       </button>
-      <span class="js-current-time"></span>
-      -
-      <span class="js-duration"></span>
       <button class="js-volume-button vp-button">
         <i class="fa fa-volume-off" aria-hidden="true"></i>
       </button>
+      <span class="js-current-time vp-timer"></span>
       <div class="vp-button-separator"></div>
+      <span class="js-duration vp-timer"></span>
       <button class="js-fullscreen-button vp-button">
         <i class="fa fa-expand" aria-hidden="true"></i>
       </button>
