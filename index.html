@@ -56,6 +56,8 @@
       margin: 10px 0px 0px 10px;
     }
     .vp-slider-dot {
+      opacity: 0;
+      transition: opacity 300ms ease-out;
       height: 8px;
       width: 8px;
       background-color: red;
@@ -64,6 +66,10 @@
       border: solid white 3px;
       margin-top: 0.35em;
       margin-left: -8px;
+    }
+    .vp-button-separator:hover .vp-slider-dot {
+      opacity: 1;
+      transition: opacity 3000ms ease-in;
     }
     .roboto-regular {
       font-family: "Roboto", sans-serif;
